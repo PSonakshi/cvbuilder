@@ -1,0 +1,284 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+section {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border: solid;
+    border-radius: 30px;
+    background-color: #333;
+   text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="url"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 35px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+#cv-preview {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #000000;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#cv-preview h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#cv-preview ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cv-preview ul li {
+    margin-bottom: 10px;
+}
+
+
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #cv-preview, #cv-preview * {
+        visibility: visible;
+    }
+
+    #cv-preview {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+#profile-image-preview {
+    display: none; 
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    
+}
+
+
+#cv-preview {
+    display: none; 
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+
+body, h1, h2, h3, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+#cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #000000;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    
+}
+
+
+#cv-header {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+#cv-header-left img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+}
+h2.cv-name{
+    text-align: left;
+   
+    border: none;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+#cv-header-left {
+    flex: 1;
+}
+
+
+
+#cv-header-right {
+    flex: 2;
+    padding-left: 20px;
+}
+
+
+.cv-section {
+    margin-bottom: 20px;
+}
+
+
+.cv-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+.cv-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.cv-section ul li {
+    margin-bottom: 5px;
+}
+
+
+#print-cv {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#print-cv:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 600px) {
+    #cv-container {
+        padding: 10px;
+    }
+    #cv-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    #cv-header-left img {
+        margin-bottom: 0;
+    }
+    #cv-header-right {
+        padding-left: 0;
+        text-align: center;
+    }
+    .cv-section {
+        margin-bottom: 15px;
+    }
+    .cv-section h3 {
+        font-size: 1.2em;
+    }
+    .print-cv {
+        margin: 10px auto;
+    }
+}
